@@ -5,6 +5,8 @@ function Def(html) {
         <html>
             <head>
                 <title>Title</title>
+                /* BOOTSTRAP CDN LINK (long) */
+                <link rel="stylesheet" href="/css/style.css" />
             </head>
             <body>
                 {html.children}
@@ -13,6 +15,7 @@ function Def(html) {
     )
 }
 
-
 module.exports = Def
+
+
 

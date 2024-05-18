@@ -1,10 +1,14 @@
 const router = require('express').Router()
+const db = require('../models')
 
-// GET /places
-app.get('/', (req, res) => {
-    let places = []
-    res.render('places/index', {places})
-  })
-  
+router.get('/', (req, res) => {
+    db.Place.find()
+    .then((places) => {
+      res.render('places/index', {places})
+    })
+    .catch(err => {
+      res.render('error404')
+    })
+})
 
 module.exports = router
