@@ -1,8 +1,10 @@
 const router = require('express').Router()
 
-router.get('/', (req, res) => {
-    res.send('GET /places')
-})
+// GET /places
+app.get('/', (req, res) => {
+    let places = []
+    res.render('places/index', {places})
+  })
+  
 
 module.exports = router
-
