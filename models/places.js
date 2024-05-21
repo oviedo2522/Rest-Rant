@@ -11,4 +11,6 @@ let places = [{
       cuisines: 'Coffee, Bakery',
       pic: '/public/images/berriesplate.jpg'
   }]
+  res.render('places/index', {places})
+
   

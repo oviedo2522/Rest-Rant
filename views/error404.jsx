@@ -12,7 +12,7 @@ function error404() {
                 <h1>404: PAGE NOT FOUND</h1>
                 <p>Oops, sorry, we can't find this page!</p>
                 <div>
-                    <img src="/public/images/PIXNIO-317090-4389x3026.jpg" alt="" />
+                    <img src="/public/images/Cutecat.jpg" alt="Cat" />
                 </div>
                 <a href="/places">
                     <button className="btn-primary">Places Page</button>
